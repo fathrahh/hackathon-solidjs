@@ -5,11 +5,7 @@ import CounterContainer from "./components/CounterContainer";
 import { counter, setCounter, products } from "./store";
 import { dollarCurrency } from "./utils/dollarCurrency";
 
-let index = 0;
-
 const App: Component = () => {
-  index++;
-  console.log(index);
   return (
     <div class="p-4 bg-cyan-200 w-full overflow-hidden">
       <div class="h-screen flex flex-col justify-center items-center ">

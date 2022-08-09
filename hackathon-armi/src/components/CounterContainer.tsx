@@ -5,7 +5,12 @@ interface Props {
   title?: string;
 }
 
+let index = 0;
+
 const CounterContainer: Component<Props> = ({ title = "counter" }) => {
+  index++;
+  console.log(index);
+
   return (
     <div class="p-2 text-center min-w-[120px] aspect-square border-2 border-gray-400/20 shadow-md shadow-stone-400  rounded-md bg-white">
       <h3 class=" capitalize text-base font-bold text-purple-600 mb-5">
